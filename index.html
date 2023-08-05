@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Tailwind CSS CDN -->
+  <link rel="stylesheet" href="/dist/output.css">
+<link rel="shortcut icon" href="/images/sparkhorizontal.png" type="image/x-icon">
+  <title>Spark Web Solution</title>
+</head>
+
+<body>
+  <nav class="bg-gray-400 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="text-white font-bold text-xl"><img class="w-28 h-12" src="/images/sparkhorizontal.png" alt=""></a>
+          </div>
+          <!-- Links -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4" >
+              <a id="link-1" href="#" class="text-gray-300 hover:text-pink-400 px-3 py-2 rounded-md">Home</a>
+              <a id="link-2" href="#" class="text-gray-300 hover:text-pink-400 px-3 py-2 rounded-md">About</a>
+              <a id="link-3" href="#" class="text-gray-300 hover:text-pink-400 px-3 py-2 rounded-md">Services</a>
+              <a id="link-4" href="#" class="text-gray-300 hover:text-pink-400 px-3 py-2 rounded-md">Contact</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Hamburger menu button -->
+        <div class="-mr-2 flex md:hidden">
+          <button type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="relative hidden md:block ">
+          <input id="type" type="text" placeholder="Search" class="flex flex-shrink mt-8 ml-3 pr-3border border-gray-300 rounded outline-none focus:ring-2 focus:ring-blue-500 sm:font-thin md:font-thin" />
+          <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+              <!-- <path fill-rule="evenodd" d="M9 16a7 7 0 100-14 7 7 0 000 14zm7-1.46l4.26 4.26a1 1 0 11-1.42 1.42L15.5 15.96A9.48 9.48 0 011 9.5 9.48 9.48 0 019.5 1C14.09 1 18 4.91 18 9.5c0 1.75-.59 3.36-1.58 4.66l2.08 2.08a1 1 0 01-1.42 1.42L16 14.54zm-7-1.46a5.5 5.5 0 110-11 5.5 5.5 0 010 11z" clip-rule="evenodd" /> -->
+            </svg>
+          </button>
+        </div>
+        <div id="Login" class=" hidden md:block text-white">Login/SignUp</div>
+      </div>
+       <!-- main menu section -->
+       <div class="sm:hidden hidden md:block">
+        <div class="sm:pt-1.5 sm:bg-red-600 md:pt-3 md:bg-green-600 bg-pink-600">
+          <div class="relative pb-1 ml-2 mr-3  flex gap-2 justify-between text-gray-850"><a id="link-5" class="ml-4 cursor-pointer font-semibold py-[9px] px-[17px]  glossy bg-stroke-100 flex gap-2 rounded"   href="https://pwskills.com/courses?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Pw_Skills_brand_java&amp;gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSVaAGiuig2tp7wqliE3QGx5qgr_4YMz34mKTgcLqgLJ5zIDAef4sswaAsfaEALw_wcB">Courses<svg class="h-6 w-4" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M112 184L256 328L400 184" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path></svg><i></i></a>
+            <a id="link-6" class="cursor-pointer inline-block font-semibold py-[9px] px-[17px]  " href="https://lab.pwskills.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Pw_Skills_brand_java&amp;gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSVaAGiuig2tp7wqliE3QGx5qgr_4YMz34mKTgcLqgLJ5zIDAef4sswaAsfaEALw_wcB">PW Skills Lab<i></i></a>
+            <a id="link-7" class="cursor-pointer inline-block font-semibold py-[9px] px-[17px]  " href="https://jobs.pwskills.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Pw_Skills_brand_java&amp;gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSVaAGiuig2tp7wqliE3QGx5qgr_4YMz34mKTgcLqgLJ5zIDAef4sswaAsfaEALw_wcB">Job Portal<i></i></a>
+            <a id="link-8" class="cursor-pointer inline-block font-semibold py-[9px] px-[17px]  " href="https://experience.pwskills.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Pw_Skills_brand_java&amp;gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSVaAGiuig2tp7wqliE3QGx5qgr_4YMz34mKTgcLqgLJ5zIDAef4sswaAsfaEALw_wcB">Experience Portal<i></i></a>
+            <a id="link-9" class="cursor-pointer inline-block font-semibold py-[9px] px-[17px]  " href="https://affiliate.pwskills.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Pw_Skills_brand_java&amp;gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSVaAGiuig2tp7wqliE3QGx5qgr_4YMz34mKTgcLqgLJ5zIDAef4sswaAsfaEALw_wcB">Become an affiliate<i></i></a>
+            <a id="link-10" class="cursor-pointer inline-block font-semibold py-[9px] px-[17px]  " href="https://halloffame.pwskills.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Pw_Skills_brand_java&amp;gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSVaAGiuig2tp7wqliE3QGx5qgr_4YMz34mKTgcLqgLJ5zIDAef4sswaAsfaEALw_wcB">Hall Of fame<i></i></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden" >
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md">About</a>
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md">Services</a>
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md">Contact</a>
+      </div>
+       <!-- user button -->
+        <div  class="flex justify-between sm:pt-1 sm:pb-1 sm:bg-red-600  md:bg-green-600 bg-pink-600 pt-1 pb-1 ">
+          <div id="btn">Login/SignUp</div>
+          <!-- searchbar tool start here  -->
+          <div class="border border-stroke-200 flex items-center gap-x-3 py-[10px] px-5 rounded w-[70%] relative"><svg class="w-6 h-6 text-gray-650" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M464 428L339.92 303.9C359.916 276.421 370.673 243.304 370.64 209.32C370.64 120.37 298.27 48 209.32 48C120.37 48 48 120.37 48 209.32C48 298.27 120.37 370.64 209.32 370.64C243.304 370.673 276.421 359.916 303.9 339.92L428 464L464 428ZM209.32 319.69C187.488 319.692 166.146 313.22 147.992 301.092C129.839 288.964 115.69 271.725 107.334 251.555C98.9785 231.385 96.7917 209.191 101.05 187.778C105.309 166.366 115.822 146.697 131.26 131.26C146.697 115.822 166.366 105.309 187.778 101.05C209.191 96.7917 231.385 98.9785 251.555 107.334C271.725 115.69 288.964 129.839 301.092 147.992C313.22 166.146 319.692 187.488 319.69 209.32C319.656 238.581 308.016 266.634 287.325 287.325C266.634 308.016 238.581 319.656 209.32 319.69Z" fill="currentColor"></path></svg><div class="relative">
+            <input type="text" placeholder="Search" class="w-full px-4 sm:px-1 border border-gray-300 rounded outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <!-- searchbar tool end here -->
+        </div> 
+        
+    </div>
+  </nav>
+<header>
+  <div>
+<button class="btn">click here</button>
+</div>
+</header>
+<main></main>
+<footer></footer>
+  <!-- Your page content here -->
+
+  <script>
+    // JavaScript code for handling the mobile menu toggle
+    const menuToggle = document.querySelector('.md\\:hidden');
+    const menuContainer = document.querySelector('.md\\:hidden > div');
+
+    menuToggle.addEventListener('click', () => {
+      menuContainer.classList.toggle('hidden');
+    });
+  </script>
+<script src="/dist/output.js"></script>
+</body>
+
+</html>
